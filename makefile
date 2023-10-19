@@ -21,7 +21,7 @@
 
 MCH = nix
 
-CC = gcc
+CC = gcc-13
 CPP = $(CC) -E
 CFLAGS = -Wall -O2 -c -I../$(MCH) -I../include
 LDFLAGS = -O2
@@ -30,7 +30,7 @@ MDEFINES = "CC=$(CC)" "CPP=$(CPP)" "CFLAGS=$(CFLAGS)" "DEFS=$(DEFS)"
 SUBDIRS = c $(MCH) include
 OBJS = c/*.o $(MCH)/*.o
 
-ha : subdirs 
+all : subdirs
 	$(CC) $(LDFLAGS) -o ha $(OBJS)
 
 subdirs: 

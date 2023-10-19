@@ -19,6 +19,7 @@
 	HA *nix specific routines
 ***********************************************************************/
 
+#include <string.h>
 #include <stdlib.h>
 #include <ctype.h>
 #include <stdio.h>
@@ -333,7 +334,7 @@ void md_listdat(void) {
 
 char *md_timestring(unsigned long t) {
     
-    static char ts[22];
+    static char ts[34];
     struct tm *tim;	
     
     tim=localtime((long *)&t);

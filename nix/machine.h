@@ -24,7 +24,7 @@
 #include <sys/stat.h>
 #include <signal.h>
 
-#define BETA "\337"
+#define BETA "ö"
 typedef short S16B;
 typedef unsigned short U16B;
 typedef int S32B;
